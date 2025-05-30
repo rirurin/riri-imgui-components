@@ -1,0 +1,20 @@
+[package]
+name = "imguizmo-rs"
+version.workspace = true
+authors.workspace = true
+categories.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license-file.workspace = true
+edition.workspace = true
+
+[dependencies]
+bitflags = "2.9.1"
+glam = "0.30.3"
+imgui-original = { package = "imgui", version = "0.12.0", features = ["docking", "tables-api"], optional = true }
+# imgui-riri = { package = "imgui", git = "https://github.com/rirurin/imgui-rs", features = ["docking", "tables-api"], optional = true }
+
+[features]
+default = [ "imgui" ]
+imgui = [ "dep:imgui-original" ]
+# imgui-riri = [ "dep:imgui-riri" ]

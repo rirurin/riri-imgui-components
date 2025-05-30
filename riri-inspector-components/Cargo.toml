@@ -1,0 +1,18 @@
+[package]
+name = "riri-inspector-components"
+version.workspace = true
+authors.workspace = true
+categories.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license-file.workspace = true
+edition.workspace = true
+
+[dependencies]
+allocator-api2 = "0.2.21"
+bitflags = "2.6"
+glam = "0.30.3"
+# imgui = { git = "https://github.com/rirurin/imgui-rs", features = ["docking", "tables-api"] }
+imgui = { version = "0.12.0", features = ["docking", "tables-api"] }
+regex = "1.11.1"
+# riri-mod-tools-rt = { git = "https://github.com/rirurin/riri-mod-tools" }
