@@ -5,7 +5,7 @@ use imgui::{
     Ui
 };
 use std::fmt::Debug;
-pub trait InspectorPanel : std::fmt::Debug {
+pub trait InspectorPanel : Debug {
     fn get_panel_name(&self) -> &'static str;
     fn draw(&mut self, ui: &Ui) {
         if let Some(_) = ui.tab_item_with_flags(self.get_panel_name(), Some(&mut true), TabItemFlags::empty()) {
@@ -13,6 +13,10 @@ pub trait InspectorPanel : std::fmt::Debug {
         }
     }
     fn draw_contents(&mut self, ui: &Ui);
+}
+
+pub trait InspectorPanelV2: InspectorPanel {
+    fn show_panel(&self) -> bool;
 }
 
 pub trait BasicPanel {

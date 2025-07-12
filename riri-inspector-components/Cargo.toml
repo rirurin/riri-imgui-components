@@ -15,7 +15,6 @@ glam = "0.30.3"
 imgui-original = { package = "imgui", version = "0.12.0", features = ["docking", "tables-api"], optional = true }
 imgui-riri = { package = "imgui", git = "https://github.com/rirurin/imgui-rs", features = ["docking", "tables-api"], optional = true }
 regex = "1.11.1"
-# riri-mod-tools-rt = { git = "https://github.com/rirurin/riri-mod-tools" }
 
 [features]
 # default = ["imgui"]
