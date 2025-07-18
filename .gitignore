@@ -11,5 +11,7 @@
 /*/middata/
 *.g.cs
 
+.idea/
+
 # See sample script in SetEnv.ps1
 /SetEnv.local.ps1
